@@ -18,3 +18,10 @@ double product3 = i1 * d1;
 Console.WriteLine(product1);
 Console.WriteLine(product2);
 Console.WriteLine(product3);
+
+double quetion = i1 / i2;
+Console.WriteLine(quetion);
+
+d1 = 6;
+double quetion2 = i1 / d1;
+Console.WriteLine(quetion2);
