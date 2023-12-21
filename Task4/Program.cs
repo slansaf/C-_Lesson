@@ -1,10 +1,12 @@
-﻿int n = 100;
-int i = 1;
+﻿int а = 8;
+int b = 4;
 
-while (i <= n)
+if  ( a == b^2)
 {
-	//Console.WriteLine(i);
-	Console.Write(i);
-	Console.Write(' ');
-	i++;
+	Console.Write('Число является квадратом');
+}
+
+else 
+{
+	
 }
