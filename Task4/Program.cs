@@ -1,12 +1,14 @@
-﻿int а = 8;
-int b = 4;
+﻿//using System.Math;
+//using System.ComponentModel;
 
-if  ( a == b^2)
-{
-	Console.Write('Число является квадратом');
-}
+int number = 5;
 
-else 
+//int c = (int)Math.Pow(b, 2);
+int number_min = -number;
+//Console.Write(number_min);
+while  (number_min <= number)
 {
-	
+	Console.Write(number_min);
+	Console.Write(" ");
+	number_min++;
 }
