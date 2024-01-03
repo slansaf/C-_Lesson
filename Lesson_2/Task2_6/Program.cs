@@ -7,7 +7,7 @@ namespace prject
 		{
 			//Работа со строками
 
-			string word = "Hello";
+			//string word = "Hello";
 
 			/* System.Console.WriteLine(word.Length);
 			word = String.Concat(word, "!!!");
