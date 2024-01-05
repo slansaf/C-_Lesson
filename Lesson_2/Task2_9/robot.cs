@@ -12,7 +12,7 @@ namespace projact
 
 		public Robot(string _name, int _weigth, byte[] _coordinates) {
 			System.Console.WriteLine("Object has been created");
-			setValues(_name, _weigth, _coordinates);
+			this.setValues(name, weigth, coordinates);
 			count++;
 		}
 
@@ -20,15 +20,15 @@ namespace projact
 			count++;
 		}
 
-		public void setValues(string _name, int _weigth, byte[] _coordinates){
-			name = _name;
-			weigth = _weigth;
-			coordinates = _coordinates;
+		public void setValues(string name, int weigth, byte[] coordinates){
+			this.name = name;
+			this.weigth = weigth;
+			this.coordinates = coordinates;
 			count++;
 		}
 
 		public void printValues(){
-			System.Console.WriteLine(name + " weight " + weigth + ". Coordinates: ");
+			System.Console.WriteLine(this.name + " weight " + this.weigth + ". Coordinates: ");
 			foreach( byte el in coordinates){
 				System.Console.WriteLine(el);
 			}

@@ -12,7 +12,7 @@ namespace projact
 			killer.setValues("Killer", 1000, new byte[] {0, 10, 10});
 			killer.printValues();
 		
-			Robot.Print();
+			Robot.Print(); //Применение статической функции
 
 		}
 			
