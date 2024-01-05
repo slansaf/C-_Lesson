@@ -10,13 +10,30 @@ namespace projact
 		private int weigth = 0;
 		private byte[] coordinates = new byte[] {0, 0, 0};
 
-		public Robot(string _name, int _weigth, byte[] _coordinates) {
+		//Это Аксессор - если нужно что либо контролировать (ввод от пользователя данных)
+		public int Weight{
+			get {
+				System.Console.Write("Результат: ");
+				return this.weigth;
+			}
+			set{
+				if (value < 1)
+					this.weigth = 1;
+				else if (value > 5000)
+					this.weigth = 5000;
+				else
+					this.weigth = value;
+			}
+		}
+
+		public Robot(string name, int weigth, byte[] coordinates) {
 			System.Console.WriteLine("Object has been created");
 			this.setValues(name, weigth, coordinates);
 			count++;
 		}
 
-		public Robot() {
+		public Robot(string name) {
+			this.setValues(name, weigth, coordinates);
 			count++;
 		}
 
