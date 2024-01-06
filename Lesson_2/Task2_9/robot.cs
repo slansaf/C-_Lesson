@@ -1,5 +1,6 @@
 using System;
 
+
 namespace projact
 {
 	class Robot
@@ -30,6 +31,13 @@ namespace projact
 				else
 					this.weigth = value;
 			}
+		}
+
+		public string Name{
+			get{
+				return name;
+			}
+			private set {}
 		}
 
 		public Robot(string name, int weigth, byte[] coordinates)
