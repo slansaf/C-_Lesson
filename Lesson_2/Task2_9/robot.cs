@@ -63,7 +63,7 @@ namespace projact
 			count++;
 		}
 
-		public void printValues()
+		public virtual void printValues() // Добавили виртуальный метод вывода информатиции
 		{
 			System.Console.WriteLine(this.name + " weight " + this.weigth + ". Coordinates: ");
 			foreach (byte el in coordinates)

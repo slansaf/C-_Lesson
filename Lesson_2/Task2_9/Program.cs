@@ -13,6 +13,7 @@ namespace projact
 
 
 			Killer killer = new Killer("Killer", 1000, new byte[] { 0, 10, 10 }, 100);
+			killer.printValues();
 			killer.Lazer();
 
 
@@ -28,7 +29,7 @@ namespace projact
 			robots.Add(new Killer("John", 800, new byte[]{10, 0, 10}, 100));
 			robots.Add(new Killer("Josh", 600, new byte[]{10, 20, 10}, 100));
 
-			Robot newRobot = null; // Использование операторов as и  is
+			Robot? newRobot = null; // Использование операторов as и  is
 
 			foreach (Killer obj in robots)
 			{

@@ -12,7 +12,12 @@ namespace projact
 		public Killer(string name, int weigth, byte[] coordinates, int health) : base(name, weigth, coordinates)
 		{
 			this.Health = health;
+		}
+
+		public override void printValues() // Добавили виртуальный метод вывода информатиции и переписали метод печати (добавыили ещё одну позицию)
+		{
 			base.printValues();
+			System.Console.WriteLine("Health: " +  this.Health);
 		}
 
 		public void Lazer()
